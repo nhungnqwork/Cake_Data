@@ -1,4 +1,4 @@
-﻿#region Topic
+#region Topic
 /*
  * 7) A customer wants to buy some cakes at a bakery. 
  *    Use integer data type to represent the type of cake, its quantity, and its unit price. 
@@ -21,6 +21,7 @@ ushort diabetie_cake = 5 | (50 << 5);     //id = 5, price: $4 //$2500
 ushort black_forest_cake = 6 | (34 << 5); // id = 6, //$1700
 ushort red_velvet_cheese_cake = 7  | (60 << 5); // id = 7, //$3000
 ushort caramel_cake = 8  | (40 << 5); // id = 8, //$2000
+ushort choco_mar_cake = 9 | (36 << 5); //id = 9, //$1800
 #endregion
 
 
@@ -42,6 +43,7 @@ DisplayCake(nameof(diabetie_cake), diabetie_cake);
 DisplayCake(nameof(black_forest_cake), black_forest_cake);
 DisplayCake(nameof(red_velvet_cheese_cake), red_velvet_cheese_cake);
 DisplayCake(nameof(caramel_cake), caramel_cake);
+DisplayCake(nameof(choco_mar_cake), choco_mar_cake);
 #endregion
 
 
@@ -54,6 +56,7 @@ uint orderLine5 = (uint)(diabetie_cake | (7 << 11));
 uint orderLine6 = (uint)(black_forest_cake | (1 << 11));
 uint orderLine7 = (uint)(red_velvet_cheese_cake | (2 << 11));
 uint orderLine8 = (uint)(caramel_cake | (5 << 11));
+uint orderLine9 = (uint)(choco_mar_cake | (1 << 11));
 
 void DisplayOrder(string name, uint orderLine)
 {
@@ -76,6 +79,7 @@ DisplayOrder(nameof(diabetie_cake), orderLine5);
 DisplayOrder(nameof(black_forest_cake), orderLine6);
 DisplayOrder(nameof(red_velvet_cheese_cake), orderLine7);
 DisplayOrder(nameof(caramel_cake), orderLine8);
+DisplayOrder(nameof(choco_mar_cake), orderLine9);
 #endregion
 
 
